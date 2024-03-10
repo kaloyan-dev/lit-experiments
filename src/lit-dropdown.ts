@@ -1,8 +1,8 @@
 import { LitElement, css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-@customElement("custom-dropdown")
-export class CustomDropdown extends LitElement {
+@customElement("lit-dropdown")
+export class LitDropdown extends LitElement {
   // Declare reactive properties
   @property() name?: string = "Dropdown";
   @property() open?: boolean = false;
