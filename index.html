@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lit Custom Dropdown</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/custom-dropdown.ts"></script>
+    <script type="module" src="/src/custom-option.ts"></script>
+  </head>
+  <body>
+    <!-- Colors Showcase -->
+    <section>
+      <h2>Colors</h2>
+      <custom-dropdown name="Red Dropdown" color="red">
+        <custom-option link="https://lit.dev"></custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+        <custom-option link="https://lit.dev">Lit</custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+        <custom-option link="https://lit.dev">Lit</custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+        <custom-option link="https://lit.dev">Lit</custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+        <custom-option link="https://lit.dev">Lit</custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+        <custom-option link="https://lit.dev">Lit</custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+      </custom-dropdown>
+
+      <custom-dropdown name="Green Dropdown" color="green">
+        <custom-option link="https://lit.dev">Lit</custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+      </custom-dropdown>
+
+      <custom-dropdown name="Blue (default) Dropdown">
+        <custom-option link="https://lit.dev">Lit</custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+      </custom-dropdown>
+
+      <custom-dropdown name="Yellow Dropdown" color="yellow">
+        <custom-option link="https://lit.dev">Lit</custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+      </custom-dropdown>
+    </section>
+
+    <!-- Positions Showcase -->
+    <section>
+      <h2>Positions</h2>
+      <h3>Right</h3>
+      <custom-dropdown position="right">
+        <custom-option link="https://lit.dev"></custom-option>
+        <custom-option link="https://vitejs.dev/">Vite</custom-option>
+        <custom-option link="https://google.com">Google</custom-option>
+      </custom-dropdown>
+
+      <h3>Left</h3>
+      <div class="positions-left">
+        <custom-dropdown position="left">
+          <custom-option link="https://lit.dev"></custom-option>
+          <custom-option link="https://vitejs.dev/">Vite</custom-option>
+          <custom-option link="https://google.com">Google</custom-option>
+        </custom-dropdown>
+      </div>
+
+      <h3>Top</h3>
+      <div>
+        <custom-dropdown position="top">
+          <custom-option link="https://lit.dev"></custom-option>
+          <custom-option link="https://vitejs.dev/">Vite</custom-option>
+          <custom-option link="https://google.com">Google</custom-option>
+        </custom-dropdown>
+      </div>
+
+      <h3>Bottom (default)</h3>
+      <div>
+        <custom-dropdown>
+          <custom-option link="https://lit.dev"></custom-option>
+          <custom-option link="https://vitejs.dev/">Vite</custom-option>
+          <custom-option link="https://google.com">Google</custom-option>
+        </custom-dropdown>
+      </div>
+    </section>
+  </body>
+</html>

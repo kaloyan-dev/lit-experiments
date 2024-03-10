@@ -1,0 +1,12 @@
+section {
+  color: #333;
+}
+
+section + section {
+  margin-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.positions-left {
+  padding-left: 200px;
+}
