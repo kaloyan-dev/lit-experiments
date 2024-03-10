@@ -22,23 +22,20 @@ export class LitOption extends LitElement {
       white-space: nowrap;
     }
 
-    .option a:hover {
+    .option a:hover,
+    .option.option-active a {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    }
-
-    .option a:active {
-      font-weight: bold;
     }
   `;
 
   // Declare reactive properties
-  @property()
-  link?: string = "#";
+  @property() link?: string = "#";
+  @property() active?: boolean = false;
 
   // Render the UI as a function of component state
   render() {
     const optionText = this.textContent?.trim() || "[Option Text]";
-    return html`<div class="option">
+    return html`<div class="option${this.active ? " option-active" : ""}">
       <a href="${this.link}">${optionText}</a>
     </div>`;
   }

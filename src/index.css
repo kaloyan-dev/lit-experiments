@@ -26,6 +26,11 @@ code {
   margin-left: 10px;
 }
 
+code span {
+  border-bottom: 1px dotted;
+  color: #1d4ed8;
+}
+
 .open {
   padding-bottom: 100px;
 }
