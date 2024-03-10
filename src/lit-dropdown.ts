@@ -95,7 +95,7 @@ export class LitDropdown extends LitElement {
       color = "blue";
     }
 
-    return "select-" + color;
+    return `select-${color}`;
   };
 
   optionsClass = () => {
@@ -105,7 +105,7 @@ export class LitDropdown extends LitElement {
       position = "bottom";
     }
 
-    return "options-" + position;
+    return `options-${position}`;
   };
 
   connectedCallback() {
