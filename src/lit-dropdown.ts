@@ -18,6 +18,7 @@ export class LitDropdown extends LitElement {
     :host * {
       margin: 0;
       padding: 0;
+      user-select: none;
     }
 
     :host h3 {

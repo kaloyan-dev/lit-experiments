@@ -12,7 +12,13 @@
   <body>
     <!-- Colors Showcase -->
     <section>
-      <h2>Colors</h2>
+      <h2>
+        Colors
+        <code>
+          &lt;lit-dropdown
+          color="red|green|blue|yellow"&gt;...&lt;/lit-dropdown&gt;
+        </code>
+      </h2>
       <lit-dropdown name="Red Dropdown" color="red">
         <lit-option link="https://lit.dev">Lit</lit-option>
         <lit-option link="https://vitejs.dev/">Vite</lit-option>
@@ -47,15 +53,39 @@
       </lit-dropdown>
 
       <lit-dropdown name="Yellow Dropdown" color="yellow">
-        <lit-option link="https://lit.dev">Lit</lit-option>
+        <lit-option link="https://lit.dev"
+          >Lit Link With a Very Very Long Text</lit-option
+        >
         <lit-option link="https://vitejs.dev/">Vite</lit-option>
         <lit-option link="https://google.com">Google</lit-option>
       </lit-dropdown>
     </section>
 
+    <!-- States Showcase -->
+    <section>
+      <h2>
+        State
+        <code> &lt;lit-dropdown open="true"&gt;...&lt;/lit-dropdown&gt; </code>
+      </h2>
+      <h3>Open on load</h3>
+      <div class="open">
+        <lit-dropdown position="right" open="true" name="Hi!">
+          <lit-option link="https://lit.dev">Lit</lit-option>
+          <lit-option link="https://vitejs.dev/">Vite</lit-option>
+          <lit-option link="https://google.com">Google</lit-option>
+        </lit-dropdown>
+      </div>
+    </section>
+
     <!-- Positions Showcase -->
     <section>
-      <h2>Positions</h2>
+      <h2>
+        Positions
+        <code>
+          &lt;lit-dropdown
+          position="right|left|top|bottom"&gt;...&lt;/lit-dropdown&gt;
+        </code>
+      </h2>
       <h3>Right</h3>
       <lit-dropdown position="right">
         <lit-option link="https://lit.dev">Lit</lit-option>
@@ -73,22 +103,18 @@
       </div>
 
       <h3>Top</h3>
-      <div>
-        <lit-dropdown position="top">
-          <lit-option link="https://lit.dev">Lit</lit-option>
-          <lit-option link="https://vitejs.dev/">Vite</lit-option>
-          <lit-option link="https://google.com">Google</lit-option>
-        </lit-dropdown>
-      </div>
+      <lit-dropdown position="top">
+        <lit-option link="https://lit.dev">Lit</lit-option>
+        <lit-option link="https://vitejs.dev/">Vite</lit-option>
+        <lit-option link="https://google.com">Google</lit-option>
+      </lit-dropdown>
 
       <h3>Bottom (default)</h3>
-      <div>
-        <lit-dropdown>
-          <lit-option link="https://lit.dev">Lit</lit-option>
-          <lit-option link="https://vitejs.dev/">Vite</lit-option>
-          <lit-option link="https://google.com">Google</lit-option>
-        </lit-dropdown>
-      </div>
+      <lit-dropdown>
+        <lit-option link="https://lit.dev">Lit</lit-option>
+        <lit-option link="https://vitejs.dev/">Vite</lit-option>
+        <lit-option link="https://google.com">Google</lit-option>
+      </lit-dropdown>
     </section>
   </body>
 </html>
